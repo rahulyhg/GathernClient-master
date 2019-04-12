@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".TermsAndCancelation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headerHeight"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <ImageView
+
+                android:id="@+id/imageBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="onClick"
+                android:padding="8dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/error"
+                android:tint="@color/mywhite"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:text="شروط الحجز وسياسة الإلغاء"
+                android:textAlignment="gravity"
+                android:textColor="#fff"
+
+                />
+
+        </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="شروط الحجز"
+            android:textSize="20sp"
+            android:textColor="@color/textBlackColor"
+            android:background="#fff"
+            android:layout_marginTop="36dp"
+            android:paddingTop="24dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/reserve_Conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="يوجد تأمين بمبلغ 500 يدفع عند الوصول ويسترجع عند المغادرة في حال تم التأكد من سلامة الممتلكات"
+            android:background="#fff"
+            android:minHeight="70dp"
+            android:padding="8dp"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="سياسة الإلغاء والإسترجاع"
+            android:textSize="20sp"
+            android:textColor="@color/textBlackColor"
+            android:background="#fff"
+            android:padding="8dp"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/cancel_Policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بإمكانك إالغاء الحجز مجانا قبل يوم الحجز بأربعة أيام آخر تاريخ لإلغاء الحجز هو 2019/03/06"
+            android:background="#fff"
+            android:minHeight="70dp"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

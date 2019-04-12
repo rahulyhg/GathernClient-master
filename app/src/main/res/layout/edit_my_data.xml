@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context="com.max.gathernclient.gathernclient.EditMyData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headerHeight"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="onClick"
+                android:padding="8dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/baseline_keyboard_arrow_right_white_36"
+                android:tint="@color/mywhite"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:text="تعديل بياناتي"
+                android:textAlignment="gravity"
+                android:textColor="#fff"
+
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/shape_color_white_strok_radius5"
+                    android:orientation="horizontal">
+
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:padding="8dp"
+                        android:text="الإسم الأول" />
+
+                    <com.max.gathernclient.gathernclient.MyEditText
+                        android:id="@+id/firstName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="3"
+                        android:textSize="12sp"
+                        android:background="@drawable/shape_color_white_radius5"
+                        android:inputType="text"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/note_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="الإسم الأول لا يمكن تركه فارغاً" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/shape_color_white_strok_radius5"
+                    android:orientation="horizontal">
+
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:padding="8dp"
+                        android:text="إسم العائلة" />
+
+                    <com.max.gathernclient.gathernclient.MyEditText
+                        android:id="@+id/familyName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14sp"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_color_white_radius5"
+                        android:inputType="text"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/note_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="الإسم الثاني لا يمكن تركه فارغاً" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/shape_color_white_strok_radius5"
+                    android:orientation="horizontal">
+
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:padding="8dp"
+                        android:text="البريد الإلكتروني" />
+
+                    <com.max.gathernclient.gathernclient.MyEditText
+                        android:id="@+id/email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_color_white_radius5"
+                        android:inputType="text"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LayoutDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/shape_color_white_strok_radius5"
+                    android:orientation="horizontal">
+
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:padding="8dp"
+                        android:text="تاريخ الميلاد" />
+
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:id="@+id/dateOfBirth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:onClick="onClick"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14sp"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_color_white_radius5"
+                        android:inputType="text"
+                        android:padding="4dp" />
+                </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    >
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/shape_color_transprimary_radius5"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="حفظً"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/mywhite"
+                    />
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/loading"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</FrameLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

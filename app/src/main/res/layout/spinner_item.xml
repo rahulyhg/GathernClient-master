@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.max.gathernclient.gathernclient.MyTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textItem"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    android:background="@color/mywhite"
+    app:layout_constraintTop_toTopOf="parent"
+    android:textAlignment="gravity"
+    android:gravity="center_vertical"
+    app:layout_constraintRight_toRightOf="parent" />
+

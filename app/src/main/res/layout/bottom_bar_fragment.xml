@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/parentLayout"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mydarkgray"
+            />
+        <LinearLayout
+            android:id="@+id/setLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/houses"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/houseslogo"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/hafelogo"
+                    android:tint="@color/tintGray"
+
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/houseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="البحث"
+                    android:textSize="12sp"
+                    android:textColor="@color/textGray"
+                    android:textAlignment="gravity" />
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:id="@+id/parties"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:onClick="onClick"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/partieslogo"-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:layout_height="16dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:src="@drawable/confetti"-->
+                    <!--android:tint="@color/tintGray"-->
+
+                    <!--/>-->
+                <!--<com.max.gathernclient.gathernclient.MyTextView-->
+                    <!--android:id="@+id/partiesText"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="حفلات"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textColor="@color/textGray"-->
+                    <!--android:textAlignment="gravity" />-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/offers"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:onClick="onClick"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/offerImage"-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:layout_height="16dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:src="@drawable/sale"-->
+                    <!--android:tint="@color/tintGray"-->
+
+                    <!--/>-->
+                <!--<com.max.gathernclient.gathernclient.MyTextView-->
+                    <!--android:id="@+id/offerText"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="عروض"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textColor="@color/textGray"-->
+                    <!--android:textAlignment="gravity" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/booking"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/bookImage"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/calendar"
+                    android:tint="@color/tintGray"
+
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/bookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="الحجوزات"
+                    android:textSize="12sp"
+                    android:textColor="@color/textGray"
+                    android:textAlignment="gravity" />
+            </LinearLayout>
+            <LinearLayout
+            android:id="@+id/favLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:orientation="vertical"
+            >
+            <ImageView
+            android:id="@+id/favImage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/empty_heart"
+            android:tint="@color/tintGray"
+
+            />
+            <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/favText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="المفضلة"
+            android:textSize="12sp"
+            android:textColor="@color/textGray"
+            android:textAlignment="gravity" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/moreImage"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/more"
+                    android:tint="@color/tintGray"
+
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/moreText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="المزيد"
+                    android:textSize="12sp"
+                    android:textColor="@color/textGray"
+                    android:textAlignment="gravity" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+

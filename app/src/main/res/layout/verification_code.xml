@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.max.gathernclient.gathernclient.VerificationCode">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                >
+                <ImageView
+                    android:id="@+id/imageBack"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_keyboard_arrow_right_white_36"
+                    android:onClick="onClick"
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:text="رمز التحقق"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="center"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            >
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رمز التحقق"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أدخل رمز التحقق المرسل لجوالك"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/userMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+966 610552002"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                >
+                <EditText
+                    android:id="@+id/verCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:inputType="phone"
+                    android:minHeight="40dp"
+                    android:hint="----"
+                    android:padding="4dp"
+                    android:focusableInTouchMode="true"
+                    android:ellipsize="end"
+                    android:textSize="18sp"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/shape_color_white_radius5"
+                    android:layout_weight="4"
+                    />
+
+            </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    >
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="تاكيد "
+                android:textColor="@color/mywhite"
+                android:background="@drawable/shape_color_primary_radius5"
+                android:textSize="18sp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:enabled="false"
+                />
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/loading"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,1 @@
+include ':app', ':FORTSDKv1.4.2', ':mixpanel-java-1.4.4', ':FORTSDKv1.5'

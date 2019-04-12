@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reviews">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headerHeight"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/headTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="#fff"
+
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/headerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/headImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/altscreen" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <com.max.gathernclient.gathernclient.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="كيف كانت تجربتك الاخيرة"
+                            android:textColor="@color/textBlackColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <com.max.gathernclient.gathernclient.MyTextView
+                            android:id="@+id/textChaletAndUnit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ل شاليهات العرين ملحق حدائق العرين"
+                            android:textSize="12sp" />
+
+                        <com.max.gathernclient.gathernclient.MyTextView
+                            android:id="@+id/textDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="يوم السبت 29-06-2019 السعر 250 SAR"
+
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ratingPartLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="كيف كانت تجربتك ؟ اكتب تعليقك"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    />
+                <com.max.gathernclient.gathernclient.MyEditText
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="اكتب تعليقك هنا"
+                    android:minHeight="70dp"
+                    android:textColor="@color/textBlackColor"
+                    android:padding="4dp"
+                    android:background="@drawable/shape_color_white_strok_radius5"
+                    android:textSize="12sp"
+                    />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/sendBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/mywhite"
+                    android:padding="4dp"
+                    android:text="ارسال"
+                    android:onClick="onClick"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/shape_color_primary_radius5"
+                    android:textSize="12sp"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:id="@+id/loading"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/loading"
+                    android:visibility="gone"
+                    />
+</FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Congratulations">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headerHeight"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="onClick"
+                android:padding="8dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/baseline_keyboard_arrow_right_white_36"
+                android:tint="@color/mywhite"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:text="شكرا لك"
+                android:textAlignment="gravity"
+                android:textColor="#fff"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/topLoadingImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/loading"
+            android:visibility="gone"
+            />
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="30dp"
+
+        >
+    <LinearLayout
+        android:id="@+id/firstLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_marginBottom="12dp"
+    >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حجزك الآن مؤكد"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textColor="@color/mygreen"
+            android:textSize="18sp"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نتمنى لك طلعة سعيدة"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/smile"
+            android:tint="@color/mygreen"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/seconedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            >
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اللوكيشن"
+                android:padding="4dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mygray"
+                android:layout_margin="4dp"
+                />
+            <ImageView
+                android:id="@+id/openMapImage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/layotshapewhite"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/viewonmap"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/goChalet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="إتجه للشالية"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textColor="@color/mywhite"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_marginBottom="12dp"
+            >
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم مدير الحجوزات"
+                android:padding="4dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mygray"
+                android:layout_margin="4dp"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/callSuperVisor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="0555555551"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textColor="@color/mywhite"
+                android:background="@color/mygreen"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/shape_color_white_radius5"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingBottom="12dp"
+            >
+
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/reserve_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textBlackColor"
+                android:text="تفاصيل الحجز رقم 94695"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mygray"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="رقم الحجز:"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/reserve_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="88135"
+                    android:textColor="@color/textBlackColor"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الشاليه:"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/chalet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/textBlackColor"
+                    android:text="فيصل - فهد"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mygray"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الوحدة:"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/textBlackColor"
+                    android:text="فهد الشالية الأول"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="التاريخ:"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/check_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/textBlackColor"
+                    android:text="الثلاثاء2019/02/12م"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mygray"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/textBlackColor"
+                    android:text="سعر الليلة الواحدة:"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/unitPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SAR 1500"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الخصم:"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/discount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SAR 0"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mygray"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/textBlackColor"
+                    android:text="تم دفع :"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/paid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SAR 1500"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/textBlackColor"
+                    android:text="المتبقي :"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/remainingView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SAR 1500"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mygray"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الإجمالي"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="12sp" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/textBlackColor"
+                    android:text="SAR 1500"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/mygray" />
+
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="ملاحظة:"
+                android:textColor="@color/textBlackColor"
+                />
+
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/textBlackColor"
+                android:text="التأمين 2 SAR يدفع عند تسجيل الدخول ويسترجع عند المغادرة"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/shareOnWhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="شارك معلومات الحجز علي واتساب"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textColor="@color/mywhite"
+                android:background="@color/mygreen"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="12dp"
+            >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/cancelReservation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="إالغاء الحجز"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@color/mywhite"
+            android:background="#CA0B0B"
+            android:padding="4dp"
+            />
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/loading"
+            android:visibility="gone"
+            />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

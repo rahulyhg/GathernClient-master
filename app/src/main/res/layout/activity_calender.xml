@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.max.gathernclient.gathernclient.Calender">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/fDayOfWeek"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="الخميس"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/fmonthText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="يناير"
+            android:textColor="#bbffffff"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/fdaynumber"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="31"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/fYear"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2019"
+            android:textColor="#bbffffff"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="4dp"
+        >
+<FrameLayout
+    android:id="@+id/next"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_weight="1"
+    android:onClick="onClick"
+    android:background="@drawable/shape_color_primary_radius5"
+    >
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/shape_color_primary_radius5"
+        android:src="@drawable/baseline_keyboard_arrow_right_white_18"
+        android:layout_gravity="center"
+        />
+</FrameLayout>
+
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/viewMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="يناير 2019"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+
+        <FrameLayout
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:background="@drawable/shape_color_primary_radius5"
+            >
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/baseline_keyboard_arrow_left_white_18"
+             android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="الأحد"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="السبت"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="الجمعة"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="الخميس"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="الأربعاء"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="الثلاثاء"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="الإثنين"
+            android:textColor="@color/myblack"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/calenderRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        android:layout_marginLeft="8dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        />
+</LinearLayout>
+</ScrollView>
+    <RelativeLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <com.max.gathernclient.gathernclient.MyTextView
+        android:id="@+id/confirmBooking"
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:onClick="onClick"
+        android:text="موافق"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:textColor="@color/mywhite"
+        android:background="@drawable/shape_color_primary_radius5"
+        />
+    <com.max.gathernclient.gathernclient.MyTextView
+        android:id="@+id/cancel"
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:onClick="onClick"
+        android:background="@drawable/shape_color_primary_radius5"
+        android:text="إلغاء"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:textColor="@color/mywhite"
+
+        />
+</LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout >

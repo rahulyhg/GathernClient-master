@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headerHeight"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="onClick"
+                android:padding="8dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/baseline_keyboard_arrow_right_white_36"
+                android:tint="@color/mywhite"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:text="تواصل معنا"
+                android:textAlignment="gravity"
+                android:textColor="#fff"
+
+                />
+
+        </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        >
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/mydarkgray"
+           android:layout_marginTop="36dp"
+           />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نحن سعداء لمساعدتك"
+            android:textAlignment="gravity"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خدمة العملاء - للحجز والإستفسار"
+            android:textAlignment="gravity"
+            android:layout_marginTop="12dp"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/textCall"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="920007858 "
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:onClick="onClick"
+            android:textSize="10sp"
+            android:lineSpacingMultiplier=".7"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_color_primary_radius5"
+            />
+
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="راسلنا للإقتراحات والإستفسارات "
+            android:textAlignment="gravity"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:textSize="12sp"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/email"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="hello@gathern.co"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="36dp"
+            android:onClick="onClick"
+            android:paddingRight="36dp"
+            android:background="@drawable/shape_color_primary_radius5"
+            android:layout_marginBottom="36dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mydarkgray"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layoutDirection="rtl"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/shape_color_white_radius5"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <ImageView
+            android:id="@+id/houseImage"
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/screen"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/singleTextOnImage"
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:padding="4dp"
+            android:background="@drawable/shape_color_primary_radius10"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:layout_marginLeft="24dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            >
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/show"
+            android:tint="@color/mywhite"
+            android:layout_gravity="center_vertical"
+            />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/viewCount"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="413"
+                android:textSize="8sp"
+                android:textColor="@color/mywhite"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/mywhite"
+
+
+        >
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/houseName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="استراحة المملكة"
+                android:layout_weight="1"
+                android:textColor="#ff000000"
+                android:layout_marginTop="8dp"
+                android:maxLength="22"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/houseDescription"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="استراحة 1"
+                android:textColor="@color/myblack"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:maxLength="22"
+                android:layout_marginLeft="8dp"
+
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/houseArea"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="الخبر , الكوثر"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:maxLength="22"
+                />
+
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/houseKm"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="157,4 km"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:maxLength="10"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                >
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/Price"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="السعر "
+                    android:textAlignment="gravity"
+                    android:gravity="end"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#12b600"
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/housePrice"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="500"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#12b600"
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/currency"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" ريال"
+                    android:textSize="12sp"
+                    android:textAlignment="gravity"
+                    android:gravity="start"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#12b600"
+                    />
+            </LinearLayout>
+            <RatingBar
+                android:id="@+id/houseRating"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:max="5"
+                android:stepSize="1"
+                android:textAlignment="gravity"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginRight="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_buttons_allhouse"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/button_more_details"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_color_primary_radius5"
+                android:textColor="#fff"
+                android:text="التفاصيل"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/button_book_now"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_color_green_radius5"
+                android:textColor="#fff"
+                android:lineSpacingMultiplier=".5"
+                android:layout_gravity="center_vertical"
+                android:text="احجز الآن"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

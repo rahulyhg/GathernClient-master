@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layoutDirection="rtl"
+    android:layout_marginBottom="4dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/shape_color_white_radius5"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <!--<ImageView-->
+            <!--android:id="@+id/houseImage"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/altscreen"-->
+            <!--/>-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/singleTextOnImage"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:padding="4dp"
+            android:background="@drawable/shape_color_simi_transprimary_radius5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:layout_marginLeft="24dp" />
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+   android:orientation="horizontal"
+    >
+    <View
+        android:id="@+id/view1"
+        android:layout_height="8dp"
+        android:layout_width="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_color_darkgray_radius60"
+        />
+    <View
+        android:id="@+id/view2"
+
+        android:layout_height="8dp"
+        android:layout_width="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_color_darkgray_radius60"
+        />
+    <View
+        android:id="@+id/view3"
+
+        android:layout_height="8dp"
+        android:layout_width="8dp"
+        android:layout_margin="8dp"
+
+        android:background="@drawable/shape_color_darkgray_radius60"
+        />
+    <View
+        android:id="@+id/view4"
+
+        android:layout_height="8dp"
+        android:layout_width="8dp"
+        android:layout_margin="8dp"
+
+        android:background="@drawable/shape_color_darkgray_radius60"
+        />
+    <View
+        android:id="@+id/view5"
+
+        android:layout_height="8dp"
+        android:layout_width="8dp"
+        android:layout_margin="8dp"
+
+        android:background="@drawable/shape_color_darkgray_radius60"
+        />
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:background="@drawable/shape_color_simi_transprimary_radius5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/show"
+                android:layout_margin="2dp"
+                android:tint="@color/mywhite" />
+
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/viewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="413"
+                android:textColor="@color/mywhite"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/mywhite"
+
+
+        >
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/houseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:maxLength="22"
+                    android:text="استراحة المملكة"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/cairo"
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/houseDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="استراحة 1"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:fontFamily="@font/cairo"
+                    android:maxLength="22"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="8dp"
+
+                    />
+                <!--<com.max.gathernclient.gathernclient.MyTextView-->
+                    <!--android:id="@+id/houseArea"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:text="الخبر , الكوثر"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_marginStart="8dp"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:maxLength="22"-->
+                    <!--/>-->
+
+                <!--<com.max.gathernclient.gathernclient.MyTextView-->
+                    <!--android:id="@+id/houseKm"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="157,4 km"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_marginStart="8dp"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:maxLength="10"-->
+                    <!--/>-->
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    >
+    <ImageView
+        android:layout_height="12dp"
+        android:layout_width="12dp"
+        android:src="@drawable/dot"
+        android:padding="2dp"
+        android:tint="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        />
+                <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/capacity"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="يسع ل 150 شخص"
+                    android:textSize="10sp"
+
+                />
+</LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    >
+                    <ImageView
+                        android:layout_height="12dp"
+                        android:layout_width="12dp"
+                        android:src="@drawable/dot"
+                        android:padding="2dp"
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center_vertical"
+                        />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/isPool"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="لا يوجد مسبح"
+                    app:fontFamily="@font/cairo"
+                    android:textSize="10sp"
+
+                    />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    >
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    >
+
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:id="@+id/housePrice"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="500"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textAlignment="gravity"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#12b600"
+                        />
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:id="@+id/currency"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text=" ريال"
+                        android:textSize="12sp"
+                        android:textAlignment="gravity"
+                        android:gravity="start"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#12b600"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <com.max.gathernclient.gathernclient.MyTextView
+                            android:id="@+id/area"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="الثمامة"
+                            android:maxLength="10"
+                            android:textSize="10sp"
+                            />
+                        <com.max.gathernclient.gathernclient.MyTextView
+                            android:id="@+id/city"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="الرياض"
+                            android:maxLength="10"
+                            android:textSize="10sp"
+                            />
+                        <com.max.gathernclient.gathernclient.MyTextView
+                            android:id="@+id/distance"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="km 365"
+                            android:textSize="10sp"
+                            />
+                    </LinearLayout>
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:id="@+id/reviews"
+                        android:layout_height="match_parent"
+                        android:layout_width="50dp"
+                        android:text="رائع"
+                        android:layout_margin="4dp"
+                        android:textAlignment="gravity"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier=".7"
+                        android:textColor="@color/mywhite"
+                        android:background="@drawable/shape_color_primary_radius5"
+
+                        />
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

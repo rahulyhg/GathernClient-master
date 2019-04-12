@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">قاذر إن</string>
+    <string name="empty" />
+    <string name="htmparties"><![CDATA[
+        <p>
+        <font color ="white" > <h1>920007858 </h1> <br/>9:30 am :12:30 am </font>
+         </p>
+       ]]>
+ </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">356138908326484</string>
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+
+</resources>

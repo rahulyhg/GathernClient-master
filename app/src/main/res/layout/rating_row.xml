@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:id="@+id/ratingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:src="@drawable/rate"
+                android:tint="#91DC5A"
+
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="2dp"
+                    android:text="تقييمات مصدقة%100"
+                    android:textColor="@color/myblack" />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/readMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="ضيوف حقيقين وآراء حقيقية"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/cleanText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp"
+                    android:text="النظافة " />
+                <LinearLayout
+                    android:id="@+id/cleanLayout"
+                    android:layout_width="150dp"
+                    android:layout_height="12dp"
+                    android:background="@color/mygray"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/stuffText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp"
+                    android:text="طاقم العمل " />
+                <LinearLayout
+                    android:id="@+id/stuffLayout"
+                    android:layout_width="150dp"
+                    android:layout_height="12dp"
+                    android:background="@color/mygray"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+
+                    />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/chaletText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp"
+                    android:text="حالة الشالية " />
+                <LinearLayout
+                    android:id="@+id/chaletLayout"
+                    android:layout_width="150dp"
+                    android:layout_height="12dp"
+                    android:background="@color/mygray"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/numberOfRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="end"
+                    android:text="1 تقييم" />
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/rating"
+                    android:layout_width="130dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/shape_color_primary_radius5"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier=".7"
+                    android:text="9.3 رائع"
+                    android:layout_gravity="end"
+                    android:textAlignment="gravity"
+                    android:textColor="#99ffffff"
+                    android:textSize="12sp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/mygray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recycleLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp"
+    android:paddingTop="12dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="12dp"
+    >
+
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/ratingDouble_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:padding="4dp"
+            android:layout_weight="2"
+            android:background="@drawable/shape_color_primary_radius5"
+            android:gravity="center"
+            android:lineSpacingMultiplier=".7"
+            android:text="9.3 رائع"
+            android:textAlignment="gravity"
+            android:textColor="#99ffffff"
+            android:textSize="12sp" />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+
+        >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    >
+
+    <com.max.gathernclient.gathernclient.MyTextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حاتم المطيري"
+        android:textColor="@color/mydarkgray"
+        android:layout_gravity="right"
+        android:padding="4dp"
+        android:textSize="12sp" />
+    <com.max.gathernclient.gathernclient.MyTextView
+        android:id="@+id/unitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" شالية 4"
+        android:padding="4dp"
+        android:textColor="@color/mydarkgray"
+        android:textSize="12sp" />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حاتم المطيري شالية 4"
+            android:textColor="@color/myblack"
+            android:padding="4dp"
+            android:textSize="12sp" />
+
+</LinearLayout>
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="2019/02/01"
+            android:textSize="12sp" />
+    </FrameLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+             android:layout_weight="1"
+            />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/mydarkgray"
+        android:layout_weight="9"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        />
+    </LinearLayout>
+</LinearLayout>

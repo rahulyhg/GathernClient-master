@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/recycleLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp"
+    android:paddingTop="12dp"
+    android:layoutDirection="rtl"
+    android:paddingRight="4dp"
+    android:paddingBottom="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.max.gathernclient.gathernclient.MyTextView
+        android:id="@+id/ratingDouble_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:padding="4dp"
+        android:layout_weight="2"
+        android:background="@drawable/shape_color_primary_radius5"
+        android:gravity="center"
+        android:lineSpacingMultiplier=".7"
+        android:text="9.3 رائع"
+        android:textAlignment="gravity"
+        android:textColor="#99ffffff"
+        android:textSize="12sp" />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            >
+
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حاتم المطيري"
+                android:textColor="@color/mydarkgray"
+                android:layout_gravity="right"
+                android:textSize="12sp" />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/unitName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" شالية 4"
+                android:textColor="@color/mydarkgray"
+                android:textSize="12sp" />
+            <com.max.gathernclient.gathernclient.MyTextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حاتم المطيري شالية 4"
+                android:textColor="@color/myblack"
+                android:maxLength="80"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="2019/02/01"
+            android:textSize="12sp" />
+    </FrameLayout>
+</LinearLayout>

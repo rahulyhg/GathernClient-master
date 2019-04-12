@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.max.gathernclient.gathernclient.MyTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ممتاز "
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:background="@drawable/shape_search_unchecked"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent" />
+

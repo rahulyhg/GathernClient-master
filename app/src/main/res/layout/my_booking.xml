@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.max.gathernclient.gathernclient.MyBooking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <com.max.gathernclient.gathernclient.MyTextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerHeight"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:textSize="18sp"
+        />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/screenshot"
+        >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تحكم بحجوزاتك وأطلع علي العروض الخاصة"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_marginTop="250dp"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/signIn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_color_primary_radius5"
+            android:text="تسجيل الدخول"
+            android:layout_marginTop="12dp"
+            android:onClick="onClick"
+            android:textSize="12sp"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragmentBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        /></android.support.constraint.ConstraintLayout>

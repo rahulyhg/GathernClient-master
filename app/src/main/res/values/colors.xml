@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#89719D</color>
+    <color name="colorPrimaryDark">#89719D</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mygreen">#34A938</color>
+    <color name="myyellow">#F8D924</color>
+    <color name="myorange">#F3AB4E</color>
+    <color name="myblue">#749CF8</color>
+    <color name="mywhite">#ffffff</color>
+    <color name="myblack">#ff000000</color>
+    <color name="myrose">#e0c5e7</color>
+    <color name="mygray">#F3F3F3</color>
+    <color name="mydarkgray">#b9b9b9</color>
+    <color name="liteyellow">#FEF8DA</color>
+    <color name="litepurple">#ecdaf1</color>
+    <color name="transprimary">#339456A7</color>
+    <color name="transUnselected">#33c5c5c5</color>
+    <color name="transSelected">#998c8c8c</color>
+    <color name="fullTrans">#00ffffff</color>
+    <color name="tintGray">#D4D4D4</color>
+    <color name="textGray">#777777</color>
+    <color name="transBlack">#5d000000</color>
+    <color name = "veryDarkGrey">#808080</color>
+    <color name = "textBlackColor">#1B1B1B</color>
+    <color name = "viewLiteGray">#E3E3E3</color>
+    <color name  = "myliteblue">#24C2ED</color>
+    <color name = "litePink">#B972FF</color>
+</resources>

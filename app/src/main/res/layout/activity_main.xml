@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    android:background="@color/mygray"
+    tools:context="com.max.gathernclient.gathernclient.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/headerHeight"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                   android:layout_weight="35"
+                    />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/logowhite"
+                    />
+                </FrameLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/bookingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffe052"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        >
+                    <com.max.gathernclient.gathernclient.MyTextView
+                        android:id="@+id/bookingtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_color_liteyellow_radius5"
+                        android:gravity="center_vertical"
+                        android:minHeight="30dp"
+                        android:onClick="onClick"
+                        android:textColor="@color/textBlackColor"
+                        android:textStyle="italic"
+                        android:padding="8dp"
+                        android:text="موعد الحجز الاربعاء 16 يناير"
+                        android:textAlignment="gravity" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/calendar"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#5E5221"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.max.gathernclient.gathernclient.MyEditText
+                            android:id="@+id/enterName"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:background="@drawable/shape_color_liteyellow_radius5"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:hint="اسم الشالية أو المخيم..."
+                            android:textSize="14sp"
+                            android:textColorHint="#5E5221"
+                            android:textColor="#5E5221"
+                            android:textAlignment="gravity" />
+
+                        <com.max.gathernclient.gathernclient.MyEditText
+                            android:id="@+id/enterCode"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:background="@drawable/shape_color_liteyellow_radius5"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:hint="رقم الكود..."
+                            android:textSize="14sp"
+                            android:textColorHint="#5E5221"
+                            android:textColor="#5E5221"
+                            android:textAlignment="gravity" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                        <com.max.gathernclient.gathernclient.MyTextView
+                            android:id="@+id/choseCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginStart="8dp"
+                            android:onClick="onClick"
+                            android:background="@drawable/shape_color_liteyellow_radius5"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:text="الرياض"
+                            android:textSize="14sp"
+                            android:textColor="@color/textBlackColor"
+                            android:textAlignment="gravity" />
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_keyboard_arrow_down_black_24"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="24dp"
+                                android:tint="#5E5221"
+                                />
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                        <com.max.gathernclient.gathernclient.MyTextView
+
+                            android:id="@+id/chosePrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/shape_color_liteyellow_radius5"
+                            android:onClick="onClick"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:text=" كل الاسعار"
+                            android:textSize="14sp"
+                            android:textColor="@color/textBlackColor"
+                            android:textAlignment="gravity" />
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_keyboard_arrow_down_black_24"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="24dp"
+                                android:tint="#5E5221"
+                                />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <com.max.gathernclient.gathernclient.MyTextView
+
+                        android:id="@+id/search_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shape_color_primary_radius5"
+                        android:minHeight="40dp"
+                        android:textAlignment="gravity"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:text="بحث"
+                        android:textColor="@color/mywhite" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/imgRecyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    />
+
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:id="@+id/showAllHouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_color_yellow_radius5"
+                    android:text="عرض كل الشاليهات "
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="onClick"
+                    />
+
+                <com.max.gathernclient.gathernclient.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="30dp"
+                    android:text="الشاليهات"
+                    app:fontFamily="serif"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/txtRecyclerView1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/txtRecyclerView2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/txtRecyclerView3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/txtRecyclerView4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/txtRecyclerView5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="70dp"
+                    android:orientation="horizontal"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="onClick"
+            android:background="@drawable/shape_color_primary_radius60"
+            android:src="@drawable/filter"
+            android:tint="@color/mywhite"
+           android:padding="12dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            />
+<FrameLayout
+    android:id="@+id/fragmentBottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

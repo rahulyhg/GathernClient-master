@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.max.gathernclient.gathernclient.Favorite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerHeight"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageBack"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:onClick="onClick"-->
+            <!--android:paddingTop="20dp"-->
+            <!--android:src="@drawable/baseline_keyboard_arrow_right_white_36" />-->
+
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:lineSpacingMultiplier=".7"
+            android:text="المفضلة"
+            android:textAlignment="gravity"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/loading"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/AllHouse_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="12dp"
+            android:onClick="onClick"
+            android:background="@drawable/shape_color_green_radius60"
+            android:src="@drawable/phone"
+            android:tint="@color/mywhite"
+            android:padding="12dp"
+            />
+        <FrameLayout
+            android:id="@+id/fragmentBottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

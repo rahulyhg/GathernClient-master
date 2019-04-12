@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bannerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:layout_margin="4dp"
+    android:background="@drawable/shape_color_white_radius5"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        >
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/screen"
+            android:scaleType="fitXY"
+            android:cropToPadding="true"
+            android:background="@drawable/shape_color_white_radius5"
+            />
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/singleTextOnImage"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text=""
+            android:maxWidth="100dp"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+</LinearLayout>

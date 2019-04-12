@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mygray"
+    tools:context="com.max.gathernclient.gathernclient.Offers">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:layout_height="@dimen/headerHeight"
+            android:layout_width="match_parent"
+            android:text="عروض خاصة"
+            android:textColor="#fff"
+            android:paddingBottom="4dp"
+            android:background="@color/colorPrimary"
+            android:textAlignment="gravity"
+            android:gravity="center|bottom"
+            android:textSize="18sp"
+            android:layout_gravity="bottom"
+            />
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/loading"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Offers_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginBottom="60dp"
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragmentBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="70dp"
+    >
+    <FrameLayout
+        android:id="@+id/headerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        >
+        <com.max.gathernclient.gathernclient.MyTextView
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_color_litepurple_radius5_stroke1_primary"
+            android:padding="8dp"
+            android:text="موعد الحجز :الأحد ,20 يناير , 2019" />
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/calendar"
+            android:tint="#5E5221" />
+    </FrameLayout>
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
